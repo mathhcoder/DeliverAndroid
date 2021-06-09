@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DeliverAndroid</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="history_order">Buyurtmalar tarixi</string>
+    <string name="about_order">Buyurtma haqida</string>
+
+    <string name="my_orders">Mening buyurtmalarim</string>
+
+    <string name="deliver">Yetkazib berish</string>
+    <string name="products">Mahsulotlar</string>
+    <string name="confirm">Tasdiqlash</string>
+    <string name="confirm_order_payment">"Buyurtma va to'lovni tasdiqlash"</string>
+    <string name="inputCode">Kodni kiriting</string>
+    <string name="delivered">Yetkazib berildi</string>
+
+    <string name="payme">Payme</string>
+    <string name="click">Click</string>
+    <string name="cash">Cash</string>
+    <string name="deliver_location">Yetkazib berish manzili :</string>
+
+</resources>

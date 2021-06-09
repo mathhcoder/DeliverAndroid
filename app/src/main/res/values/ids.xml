@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cardViewBackInfo" type="id" />
+
+    <item name="imageView_1" type="id"/>
+    <item name="imageView_2" type="id"/>
+    <item name="imageView_3" type="id"/>
+
+</resources>

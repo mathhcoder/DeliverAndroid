@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Muazzin.Button.OnlyIcon" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="iconPadding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">?colorOnBackground</item>
+        <item name="backgroundTint">?android:colorBackground</item>
+        <item name="rippleColor">?colorSecondaryVariant</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="cornerRadius">@dimen/action_button_radius</item>
+        <item name="android:padding">@dimen/action_button_padding</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+
+</resources>

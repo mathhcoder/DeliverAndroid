@@ -1,0 +1,47 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="action_button_padding">18dp</dimen>
+    <dimen name="action_button_radius">28dp</dimen>
+
+    <dimen name="card_image_size">56dp</dimen>
+
+    <dimen name="salah_width">180dp</dimen>
+
+    <dimen name="margin_0_5x">2dp</dimen>
+    <dimen name="margin_x">4dp</dimen>
+    <dimen name="margin_2x">8dp</dimen>
+    <dimen name="margin_3x">12dp</dimen>
+    <dimen name="margin_4x">16dp</dimen>
+    <dimen name="margin_5x">20dp</dimen>
+    <dimen name="margin_6x">24dp</dimen>
+    <dimen name="margin_7x">28dp</dimen>
+    <dimen name="margin_8x">32dp</dimen>
+    <dimen name="margin_8xm">-32dp</dimen>
+    <dimen name="margin_9x">36dp</dimen>
+    <dimen name="margin_10x">40dp</dimen>
+    <dimen name="margin_11x">44dp</dimen>
+    <dimen name="margin_12x">48dp</dimen>
+    <dimen name="margin_13x">52dp</dimen>
+    <dimen name="margin_14x">56dp</dimen>
+    <dimen name="margin_15x">60dp</dimen>
+    <dimen name="margin_16x">64dp</dimen>
+    <dimen name="margin_17x">68dp</dimen>
+
+    <dimen name="margin_20x">80dp</dimen>
+    <dimen name="margin_23x">92dp</dimen>
+    <dimen name="margin_24x">96dp</dimen>
+
+    <dimen name="margin_60x">240dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="category_size">160dp</dimen>
+    <dimen name="image_size">175dp</dimen>
+
+    <dimen name="scrollImage_size">220dp</dimen>
+    <dimen name="tasbih_size">160dp</dimen>
+</resources>

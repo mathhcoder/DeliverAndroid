@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorOnSurface"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10x">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Deliver.Card.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_4x"
+                android:layout_marginTop="@dimen/margin_8x">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardViewAboutOrder"
+                        style="@style/Widget.Deliver.Card.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="?colorOnSurface"
+                        app:cardCornerRadius="@dimen/margin_4x">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textViewOrderTitle"
+                            style="@style/Widget.Deliver.Text.Body"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/about_order" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewPaymentMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewPaymentStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewPrePayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Deliver.Card.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_4x"
+                android:layout_marginTop="@dimen/margin_8x">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/Widget.Deliver.Card.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="?colorOnSurface"
+                        app:cardCornerRadius="@dimen/margin_4x">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textViewDeliverOrder"
+                            style="@style/Widget.Deliver.Text.Body"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/deliver" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewOrderType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewReceiverName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewReceiverNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewReceiverCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewReceiverAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/textViewReceiverCommentary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_4x"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewProducts"
+                style="@style/Widget.Deliver.Card.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_4x"
+                android:layout_marginTop="@dimen/margin_4x">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/Widget.Deliver.Card.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="?colorOnSurface"
+                        app:cardCornerRadius="@dimen/margin_4x">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/Widget.Deliver.Text.Body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/products" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4x" />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Deliver.Card.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_4x"
+                android:layout_marginTop="@dimen/margin_4x">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardViewConfirm"
+                        style="@style/Widget.Deliver.Card.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="?colorOnSurface"
+                        app:cardCornerRadius="@dimen/margin_4x">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textViewConfirmOrder"
+                            style="@style/Widget.Deliver.Text.Body"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/confirm_order_payment" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editTextInputCode"
+                        style="@style/Widget.Deliver.Text.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8x"
+                        android:background="@null"
+                        android:text="@string/inputCode" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_0_5x"
+                        android:layout_marginTop="@dimen/margin_4x"
+                        android:background="?colorOnSurface" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardViewButtonConfirm"
+                        style="@style/Widget.Deliver.Card.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_4x"
+                        app:cardBackgroundColor="@color/green"
+                        app:cardCornerRadius="@dimen/margin_8x">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/textViewConfirm"
+                            style="@style/Widget.Deliver.Text.Title.Bold.Middle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/confirm"
+                            android:textColor="@color/white" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Deliver.Card.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_4x"
+                android:layout_marginTop="@dimen/margin_4x"
+                app:cardBackgroundColor="@color/green">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/margin_5x"
+                        android:layout_height="@dimen/margin_5x"
+                        android:layout_marginHorizontal="@dimen/margin_x"
+                        app:srcCompat="@drawable/ic_correct" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/Widget.Deliver.Text.Title.Bold.Middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delivered"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

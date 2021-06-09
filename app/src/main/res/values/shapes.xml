@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearance.Deliver.No" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Deliver.Middle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/margin_4x</item>
+        <item name="cornerSizeTopRight">@dimen/margin_4x</item>
+        <item name="cornerSizeBottomLeft">@dimen/margin_4x</item>
+        <item name="cornerSizeBottomRight">@dimen/margin_4x</item>
+    </style>
+
+    <style name="ShapeAppearance.Deliver.Big" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/margin_8x</item>
+        <item name="cornerSizeTopRight">@dimen/margin_8x</item>
+        <item name="cornerSizeBottomLeft">@dimen/margin_8x</item>
+        <item name="cornerSizeBottomRight">@dimen/margin_8x</item>
+    </style>
+
+    <style name="ShapeAppearance.Deliver.Big.Top" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/margin_6x</item>
+        <item name="cornerSizeTopRight">@dimen/margin_6x</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Deliver.Big.Bottom" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">@dimen/margin_6x</item>
+        <item name="cornerSizeBottomRight">@dimen/margin_6x</item>
+    </style>
+
+
+    <style name="ShapeAppearance.Deliver.Action" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/margin_7x</item>
+        <item name="cornerSizeTopRight">@dimen/margin_7x</item>
+        <item name="cornerSizeBottomLeft">@dimen/margin_7x</item>
+        <item name="cornerSizeBottomRight">@dimen/margin_7x</item>
+    </style>
+
+
+</resources>

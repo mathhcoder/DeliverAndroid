@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Deliver.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?colorSurface</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.Middle</item>
+        <item name="cardElevation">0dp</item>
+        <item name="contentPadding">0dp</item>
+        <item name="useCompatPadding">true</item>
+    </style>
+
+    <style name="Widget.Deliver.Card.Main">
+        <item name="contentPadding">@dimen/margin_4x</item>
+    </style>
+
+    <style name="Widget.Deliver.Card.Tab">
+        <item name="cardCornerRadius">@dimen/margin_4x</item>
+        <item name="contentPadding">@dimen/margin_x</item>
+        <item name="useCompatPadding">false</item>
+    </style>
+
+    <style name="Widget.Deliver.Card.Primary">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.Big</item>
+        <item name="contentPadding">@dimen/margin_4x</item>
+        <item name="cardCornerRadius">@dimen/margin_6x</item>
+        <item name="useCompatPadding">true</item>
+    </style>
+
+
+    <style name="Widget.Deliver.Card.ListItem">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.Big</item>
+        <item name="contentPadding">0dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardBackgroundColor">?colorSurface</item>
+        <item name="strokeColor">?colorPrimary</item>
+    </style>
+
+    <style name="Widget.Deliver.Card.ListItem.Top">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.Big.Top</item>
+    </style>
+
+    <style name="Widget.Deliver.Card.ListItem.Middle">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.No</item>
+    </style>
+
+    <style name="Widget.Deliver.Card.ListItem.Bottom">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.Big.Bottom</item>
+    </style>
+
+
+</resources>
