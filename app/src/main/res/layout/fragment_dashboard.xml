@@ -5,24 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="100dp"
+    android:background="?colorSurface"
     tools:context=".ui.dashboard.DashboardFragment">
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:background="#F0F0F0"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        tools:ignore="MissingConstraints" />
+    <include layout="@layout/layout_header" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:background="#F0F0F0"
-        android:layout_width="300dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_height="200dp" />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        style="@style/Widget.Deliver.Card.Primary"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_4x"
+        app:contentPadding="0dp"
+        android:layout_marginTop="@dimen/margin_2x">
+
+        <com.example.deliverandroid.view.DeliverTabView
+            android:layout_marginHorizontal="@dimen/margin_2x"
+            android:layout_marginVertical="@dimen/margin_2x"
+            android:id="@+id/tabView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2x" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginTop="@dimen/margin_4x"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"/>
 
 
 </LinearLayout>

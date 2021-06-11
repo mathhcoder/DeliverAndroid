@@ -2,7 +2,6 @@
 <resources>
 
     <style name="Widget.Deliver.Card" parent="Widget.MaterialComponents.CardView">
-        <item name="cardBackgroundColor">?colorSurface</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.Middle</item>
         <item name="cardElevation">0dp</item>
         <item name="contentPadding">0dp</item>
@@ -45,6 +44,13 @@
 
     <style name="Widget.Deliver.Card.ListItem.Bottom">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Deliver.Big.Bottom</item>
+    </style>
+
+
+
+    <style name="Widget.Deliver.Card.StoryItem">
+        <item name="cardCornerRadius">@dimen/margin_6x</item>
+        <item name="cardBackgroundColor">@color/black_dark</item>
     </style>
 
 

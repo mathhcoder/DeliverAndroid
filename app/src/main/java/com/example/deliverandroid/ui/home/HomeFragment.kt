@@ -1,6 +1,7 @@
 package com.example.deliverandroid.ui.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,7 @@ import com.example.deliverandroid.R
 import com.example.deliverandroid.model.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.layout_header.*
+import java.util.*
 
 class HomeFragment : Fragment() {
 
@@ -33,6 +35,7 @@ class HomeFragment : Fragment() {
         ordersAdapter = OrdersAdapter {
             val bundle = Bundle()
             bundle.putSerializable("model", it)
+            Log.e("model","PUT , $it")
             findNavController().navigate(R.id.action_navigation_home_to_fragment_order_info, bundle)
         }
 
@@ -69,7 +72,7 @@ class HomeFragment : Fragment() {
                 id = 1,
                 number = 1021,
                 payment = PaymentModel(1, "Click"),
-                time = (Math.random() * 86400 * 1000 * 10000).toLong(),
+                time = Calendar.getInstance().timeInMillis + Calendar.getInstance().get(Calendar.ZONE_OFFSET),
                 prise = 30000,
                 paymentStatus = PaymentStatusModel(1, "not yet"),
                 address = LocationModel.TASHKENT,

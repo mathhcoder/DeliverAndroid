@@ -71,7 +71,9 @@ class OrdersAdapter(
         cardViewCell?.addView(layout)
 
         cardViewCell?.setOnClickListener {
-            data.getOrNull(holder.adapterPosition)?.let(onItemClicked)
+            data.getOrNull(holder.adapterPosition)?.let{
+                onItemClicked(it)
+            }
         }
 
         return holder
@@ -105,29 +107,32 @@ class OrdersAdapter(
 
             val pattern = "dd.MM.yyyy - kk:mm"
             val simpleDateFormat = SimpleDateFormat(pattern)
-            val current = Date()
+            val current = Date(model.time!! - Calendar.getInstance().get(Calendar.ZONE_OFFSET))
             val date = simpleDateFormat.format(current)
+
+
             itemView.textViewCommentary.text = model.commints
             itemView.textViewTime.text = date
             itemView.textViewTitle?.text = "Buyurtma #${model.number}"
             itemView.textViewProducts?.text = model.products.toString()
             itemView.textViewLocation?.text = model.address.toString()
             itemView.textViewCommentary?.text = model.commints
-            itemView.textViewPaymentTitle?.text = model.payment.name
+            itemView.textViewPaymentTitle?.text = model.payment?.name
             itemView.textViewPaymentSubtitle?.text = model.paymentStatus.type
+            itemView.clockView.clockRadius = 16F
 
-//            itemView.clockView.clockRadius = itemView.context.resources.getDimension(R.dimen.margin_6x)
 
             itemView.clockView?.time = model.time!!
-            Glide.with(itemView.context)
-                .load(model.products[0].image)
-                .centerCrop()
-                .into(itemView.findViewById(R.id.imageView_1))
 
-            Glide.with(itemView.context)
-                .load(model.products[1].image)
-                .centerCrop()
-                .into(itemView.findViewById(R.id.imageView_2))
+//            Glide.with(itemView.context)
+//                .load(model.products[0].image)
+//                .centerCrop()
+//                .into(itemView.findViewById(R.id.imageView_1))
+//
+//            Glide.with(itemView.context)
+//                .load(model.products[1].image)
+//                .centerCrop()
+//                .into(itemView.findViewById(R.id.imageView_2))
 
 
         }

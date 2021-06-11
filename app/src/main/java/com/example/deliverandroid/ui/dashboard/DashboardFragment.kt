@@ -9,10 +9,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.example.deliverandroid.R
-import com.example.deliverandroid.databinding.FragmentDashboardBinding
 import kotlinx.android.synthetic.main.fragment_dashboard.*
+import kotlinx.android.synthetic.main.layout_header.*
 
 class DashboardFragment : Fragment() {
 
@@ -28,17 +30,44 @@ class DashboardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        Glide.with(imageView1.context)
-            .asBitmap()
-            .load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1A-XKPWpFXfZBc6kWcuL4uEI_rKMeZFN99g&usqp=CAU")
-            .into(imageView1)
+        imageViewHeaderBack.visibility = View.GONE
+        tabView.firstText = "Qabulga"
+        tabView.secondText = "Balansim"
 
-        Glide.with(imageView2.context)
-            .load("https://sag.uz/image/collection_1588574294.jpg")
-            .placeholder(R.drawable.ic_card)
-            .centerCrop()
-            .into(imageView2)
+        textViewHeader.text = "Mahsulotlar Balansi"
 
+        viewPager?.adapter = object : FragmentStateAdapter(this) {
+
+            override fun getItemCount() = 2
+
+            override fun createFragment(position: Int): Fragment {
+                return when (position) {
+                    0 -> FistFragment()
+                    else -> SecondFragment()
+                }
+            }
+
+        }
+
+        onState(true)
+        tabView?.onFirst = {
+            viewPager.setCurrentItem(0, true)
+        }
+
+        tabView?.onSecond = {
+            viewPager.setCurrentItem(1, true)
+        }
+        viewPager?.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                tabView?.selectTab(position == 0)
+            }
+        })
+
+    }
+
+    private fun onState(isFirst: Boolean) {
+        tabView?.selectTab(isFirst)
 
     }
 

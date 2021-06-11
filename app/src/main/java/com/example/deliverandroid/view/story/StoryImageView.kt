@@ -1,12 +1,12 @@
-@file:Suppress("DEPRECATION")
-
 package com.example.deliverandroid.view.story
 
 import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
+import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.ImageView
+import androidx.appcompat.widget.AppCompatImageView
 import com.bumptech.glide.Glide
 import com.example.deliverandroid.R
 import com.google.android.material.card.MaterialCardView
@@ -15,6 +15,8 @@ import com.google.android.material.card.MaterialCardView
 class StoryImageView @JvmOverloads constructor(
     context: Context,
     attributeSet: AttributeSet? = null,
+    defStyleAttr: Int = 0,
+    defStyleRes: Int = 0,
 ) : FrameLayout(context, attributeSet) {
 
     var listUrlImages: List<String> = listOf(
@@ -28,43 +30,44 @@ class StoryImageView @JvmOverloads constructor(
 
     var imagesCount = Math.min(listUrlImages.size, 3)
     var viewsList: ArrayList<MaterialCardView> = arrayListOf()
+    var imagesList: ArrayList<AppCompatImageView> = arrayListOf()
 
     init {
-        repeat(imagesCount) {
-            val view = MaterialCardView(context)
-            view.also { v ->
-                v.strokeWidth = resources.getDimension(R.dimen.margin_0_5x).toInt()
-                v.strokeColor = resources.getColor(R.color.white_dark)
-                v.radius = resources.getDimension(R.dimen.margin_6x)
-                v.elevation = 0F
+        val x = resources.getDimension(R.dimen.margin_0_5x).toInt()
+        repeat(imagesCount) { it ->
+            val view = MaterialCardView(context, null, R.style.Widget_Deliver_Card_StoryItem)
+
+            view.also {
+                val color = Color.parseColor("#F0F0F0")
+                it.setCardBackgroundColor(color)
+                it.radius = resources.getDimension(R.dimen.margin_6x)
+                it.cardElevation = 0F
             }
 
+            val inview = MaterialCardView(context)
 
-            val imageView = ImageView(context)
-            imageView.layoutParams = LayoutParams(-2, -2)
+            inview.also { inv ->
+                inv.radius = resources.getDimension(R.dimen.margin_5x)
+                val color = resources.getColor(R.color.white)
+                inv.setCardBackgroundColor(color)
+                inv.cardElevation = 0F
+            }
+            val imageView = AppCompatImageView(context)
+
+            imageView.layoutParams = LayoutParams(-1, -1)
             imageView.setBackgroundColor(Color.WHITE)
 
+            inview.addView(imageView)
 
-            val size = resources.getDimension(R.dimen.margin_12x).toInt()
-            val layoutParams = LayoutParams(size, size)
+            val lpV = LayoutParams(x * 22, x * 22)
+            lpV.setMargins(x, x, x, x)
+            view.addView(inview, lpV)
 
 
 
-            imageView.layoutParams = layoutParams
-            imageView.id = when (it) {
-                0 -> R.id.imageView_1
-                1 -> R.id.imageView_2
-                else -> R.id.imageView_3
-            }
 
-            view.addView(imageView)
-            Glide.with(context)
-                .load(listUrlImages[it])
-                .centerCrop()
-                .placeholder(R.drawable.ic_balance)
-                .into(imageView)
-            imageView.setColorFilter(resources.getColor(R.color.white_dark))
-            val lp = LayoutParams(-2, -2)
+
+            val lp = LayoutParams(x * 24, x * 24)
             val left: Int =
                 if (it == 0) 0 else (it - 1) * resources.getDimension(R.dimen.margin_12x)
                     .toInt() + resources.getDimension(R.dimen.margin_9x).toInt()
