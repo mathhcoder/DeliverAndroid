@@ -5,32 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="?colorOnSurface"
     android:paddingBottom="@dimen/margin_4x"
     app:contentPadding="0dp">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/margin_4x"
-        android:layout_marginTop="@dimen/margin_4x"
-        android:orientation="horizontal">
-
-        <com.example.deliverandroid.view.clock.ClockView
-
-            android:id="@+id/clockView"
-            android:layout_width="@dimen/margin_6x"
-            android:layout_height="@dimen/margin_6x" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textViewTime"
-            style="@style/Widget.Deliver.Text.Caption"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="@dimen/margin_2x" />
-
-    </LinearLayout>
+   <include layout="@layout/layout_header_time"
+       android:layout_marginHorizontal="@dimen/margin_4x"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:layout_marginTop="@dimen/margin_4x"
+       />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/textViewTitle"
@@ -67,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_0_5x"
         android:layout_marginTop="@dimen/margin_4x"
-        android:background="?colorOnSurface" />
+        android:background="?colorSurface" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -161,7 +146,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_4x"
         android:layout_marginTop="@dimen/margin_4x"
-        app:cardBackgroundColor="?colorOnSurface">
+        app:cardBackgroundColor="?colorSurface">
 
         <LinearLayout
             android:layout_width="match_parent"

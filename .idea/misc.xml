@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="../../../../layout/custom_preview.xml" value="0.1022491455078125" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.27395833333333336" />
         <entry key="app/src/main/res/drawable/bg_dialog.xml" value="0.9571428571428572" />
         <entry key="app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.14895833333333333" />
@@ -17,17 +17,23 @@
         <entry key="app/src/main/res/drawable/ic_location.xml" value="0.27395833333333336" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.27395833333333336" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20759962928637626" />
-        <entry key="app/src/main/res/layout/cell_order.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/cell_balance.xml" value="0.6674057006835937" />
+        <entry key="app/src/main/res/layout/cell_order.xml" value="0.4295683797200521" />
+        <entry key="app/src/main/res/layout/cell_product.xml" value="0.2962515114873035" />
         <entry key="app/src/main/res/layout/cell_vertical.xml" value="0.1328125" />
         <entry key="app/src/main/res/layout/cell_vertical_bottom.xml" value="0.13697916666666668" />
         <entry key="app/src/main/res/layout/cell_vertical_middle.xml" value="0.13697916666666668" />
         <entry key="app/src/main/res/layout/cell_vertical_top.xml" value="0.13697916666666668" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1328125" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.366119384765625" />
         <entry key="app/src/main/res/layout/fragment_history_orders.xml" value="0.18206521739130435" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.18206521739130435" />
-        <entry key="app/src/main/res/layout/fragment_order_info.xml" value="0.3746958637469586" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_order_info.xml" value="0.24392523364485982" />
         <entry key="app/src/main/res/layout/fragment_order_infp.xml" value="0.16847826086956522" />
         <entry key="app/src/main/res/layout/layout_header.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/layout_header_tabbed.xml" value="0.12916666666666668" />
+        <entry key="app/src/main/res/layout/layout_header_time.xml" value="0.9756729125976563" />
+        <entry key="app/src/main/res/layout/layout_select.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2578125" />
       </map>
     </option>
