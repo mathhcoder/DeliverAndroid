@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.notifications.NotificationsFragment">
 
-    <com.example.deliverandroid.view.clock.SimpleClockView
+    <com.example.deliverandroid.base.view.SimpleClockView
         android:id="@+id/clockView2"
         android:layout_width="240dp"
         android:layout_height="240dp"

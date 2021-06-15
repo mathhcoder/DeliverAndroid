@@ -9,7 +9,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.deliverandroid.R
-import com.example.deliverandroid.model.*
+import com.example.deliverandroid.base.model.*
+import com.example.deliverandroid.ui.home.model.OrderModel
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.layout_header.*
 import java.util.*
@@ -41,6 +42,7 @@ class HomeFragment : Fragment() {
 
         recyclerView.adapter = ordersAdapter
         recyclerView.layoutManager = LinearLayoutManager(view.context)
+
         val productsList = listOf(
             ProductModel(
                 id = 1,

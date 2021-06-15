@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="?colorSurface"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".ui.orders.DashboardFragment">
 
     <include layout="@layout/layout_header" />
 
@@ -18,7 +18,7 @@
         app:contentPadding="0dp"
         android:layout_marginTop="@dimen/margin_2x">
 
-        <com.example.deliverandroid.view.DeliverTabView
+        <com.example.deliverandroid.base.view.DeliverTabView
             android:layout_marginHorizontal="@dimen/margin_2x"
             android:layout_marginVertical="@dimen/margin_2x"
             android:id="@+id/tabView"

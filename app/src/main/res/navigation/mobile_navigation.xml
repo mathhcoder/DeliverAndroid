@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.deliverandroid.ui.dashboard.DashboardFragment"
+        android:name="com.example.deliverandroid.ui.orders.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 

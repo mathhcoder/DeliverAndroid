@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.deliverandroid.R
-import com.example.deliverandroid.model.OrderModel
-import com.example.deliverandroid.ui.BaseFragment
+import com.example.deliverandroid.ui.home.model.OrderModel
+import com.example.deliverandroid.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_order_info.*
 import kotlinx.android.synthetic.main.layout_header.*
 

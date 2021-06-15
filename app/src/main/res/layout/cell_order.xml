@@ -32,7 +32,7 @@
         android:layout_marginTop="@dimen/margin_4x"
         android:orientation="horizontal">
 
-        <com.example.deliverandroid.view.story.StoryImageView
+        <com.example.deliverandroid.base.view.StoryImageView
             android:id="@+id/customStoryView"
             android:layout_width="84dp"
             android:layout_height="48dp" />

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <com.example.deliverandroid.view.clock.SimpleClockView
+    <com.example.deliverandroid.base.view.SimpleClockView
         android:id="@+id/clockView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

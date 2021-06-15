@@ -1,6 +1,5 @@
 package com.example.deliverandroid.ui.home
 
-import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -9,10 +8,9 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.deliverandroid.R
-import com.example.deliverandroid.model.CellType
-import com.example.deliverandroid.model.OrderModel
+import com.example.deliverandroid.base.model.CellType
+import com.example.deliverandroid.ui.home.model.OrderModel
 import com.google.android.material.card.MaterialCardView
 import kotlinx.android.synthetic.main.cell_order.view.*
 import java.text.SimpleDateFormat
